@@ -2,9 +2,19 @@ package view;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class LoginUI extends JFrame{
     private JPanel container;
+    private JPanel pnl_top;
+    private JLabel lbl_;
+    private JPanel pnl_bottom;
+    private JTextField fld_mail;
+    private JButton btn_login;
+    private JLabel lbl_mail;
+    private JLabel lbl_password;
+    private JPasswordField fld_password;
 
     public LoginUI(){
         this.add(container);
@@ -20,5 +30,10 @@ public class LoginUI extends JFrame{
         this.setVisible(true);
 
 
+        //"Giriş" button action
+        btn_login.addActionListener(e -> {
+            //System.out.println("Button hit");
+
+        });
     }
 }
