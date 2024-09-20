@@ -36,6 +36,7 @@ public class Helper {
     public static boolean isMailValid(String mail){
         // info@yasin.dev
         // @ olmalı , @ ten önce bir değer olmalı, @ ten sonra nokta ve değer olmalı .domainname gibi
+        // noktadan önce ve sonra değer olmalı
         if (mail == null || mail.trim().isEmpty())
             return false;
 
@@ -51,7 +52,23 @@ public class Helper {
 
         if (!parts[1].contains("."))
             return false;
+        if(!checkSidesOfDot(parts[1])){
+            return false;
+        }
 
+        else
+            return true;
+    }
+
+    public static boolean checkSidesOfDot(String afterAt){
+        String[] parts = afterAt.split("\\."); // .  nın olduğu yerden maili böler
+        if (parts.length != 2)
+            return false;
+        if (parts[0].trim().isEmpty() || parts[1].trim().isEmpty())
+            return false;
+        if (parts[1].length() < 2) {
+            return false;
+        }
         else
             return true;
     }
