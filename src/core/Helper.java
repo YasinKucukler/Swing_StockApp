@@ -60,6 +60,7 @@ public class Helper {
             return true;
     }
 
+    ///mailde nokta öncesi ve sonrası için kontroller
     public static boolean checkSidesOfDot(String afterAt){
         String[] parts = afterAt.split("\\."); // .  nın olduğu yerden maili böler
         if (parts.length != 2)
@@ -71,5 +72,31 @@ public class Helper {
         }
         else
             return true;
+    }
+
+    ///Hata uyarısı için açılır pencere
+    ///Dinamik bir pencere olması tercih edilir
+    ///singleton pattern ı da sağlar böylece
+    public static void showMgs(String message){
+        String msg;
+        String title = switch (message) {
+            case "fill" -> {
+                msg = "Lütfen tüm alanları doldurunuz!";
+                yield "ERROR";
+            }
+            case "done" -> {
+                msg = "İşlem başarılı";
+                yield "Congrats";
+            }
+            case "error" -> {
+                msg = "An Error Occured";
+                yield "ERROR";
+            }
+            default -> {
+                msg = message;
+                yield "Information";
+            }
+        };
+        JOptionPane.showMessageDialog(null, msg,title, JOptionPane.INFORMATION_MESSAGE);
     }
 }

@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d02a752-4f19-4665-a734-43b554c0b1eb" name="Changes" comment="enter1">
+    <list default="true" id="5d02a752-4f19-4665-a734-43b554c0b1eb" name="Changes" comment="entry. check email domain side">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Helper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/LoginUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/LoginUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +93,7 @@
       <workItem from="1724840761517" duration="4950000" />
       <workItem from="1725701124437" duration="598000" />
       <workItem from="1726826932890" duration="4511000" />
-      <workItem from="1726864189539" duration="1315000" />
+      <workItem from="1726864189539" duration="3430000" />
     </task>
     <task id="LOCAL-00001" summary="basics 1">
       <option name="closed" value="true" />
@@ -118,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726831781004</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="entry. check email domain side">
+      <option name="closed" value="true" />
+      <created>1726865778816</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726865778816</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +138,8 @@
     <MESSAGE value="set theme" />
     <MESSAGE value="e mail validance - is mail or not" />
     <MESSAGE value="e mail validance e- is mail or not" />
-    <option name="LAST_COMMIT_MESSAGE" value="e mail validance e- is mail or not" />
+    <MESSAGE value="entry. check email domain side" />
+    <option name="LAST_COMMIT_MESSAGE" value="entry. check email domain side" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
