@@ -1,5 +1,7 @@
 package view;
 
+import core.Helper;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -31,9 +33,19 @@ public class LoginUI extends JFrame{
 
 
         //"Giriş" button action
-        btn_login.addActionListener(e -> {
+        this.btn_login.addActionListener(e -> {
             //System.out.println("Button hit");
-
+            //if(this.fld_mail.getText().isEmpty())
+            //if(Helper.isFieldEmpty(this.fld_mail) || Helper.isFieldEmpty(this.fld_password))
+            JTextField[] checkList = {this.fld_mail, this.fld_password};
+            if (!Helper.isMailValid(this.fld_mail.getText())){
+                System.out.println(" Lütfen geçerli bir mail adresi giriniz !!!");
+            }
+//            if(Helper.isFieldListEmpty(checkList)){
+//                System.out.println("Lütfen tüm alanları doldurunuz!!");
+//            } else{
+//                System.out.println("Giriş yapılıyor....");
+//            }
         });
     }
 }
